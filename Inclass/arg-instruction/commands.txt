@@ -1,0 +1,8 @@
+docker build -t argtest1 .
+docker run argtest1
+
+docker build -t argtest2 . # Address of the github repo is specified with a variable
+docker run argtest2
+
+docker build --build-arg VERSION=2  -t argtest3 # The variable specified in the dockerfile can be set different running a command
+docker run  argtest4 
