@@ -1,4 +1,4 @@
-#########Named volumes#########
+######### Named volumes #########
 # list the docker volumes
 docker volume ls
 # create a volume named "cw-vol"
@@ -40,7 +40,7 @@ docker volume ls
 docker volume rm cw-vol
 
 
-#########Host volumes#########
+######### Host volumes #########
 # create a directory to be used as a host volume
 mkdir web_volume && cd web_volume
 # create a html file to publish
@@ -53,12 +53,12 @@ http://<public-ip>:80
 echo "<h1>I love DevOps</h1>" >> index.html
 # check the webpage again
 docker stop clarus2nd
-# the volume is removed because of the '--rm' flag
+# the container is removed because of the '--rm' flag
 # list current containers
 docker ps -a
 
 
-#########Remove unused volumes#########
+######### Remove unused volumes #########
 # list volumes
 docker volume ls
 # remove unused local volumes
